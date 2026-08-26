@@ -1,0 +1,338 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faculty Higher Secondary School - Half-Yearly Examination 2026</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: "Segoe UI", Arial, sans-serif;
+background: #f4f8ff;
+color: #172b4d;
+}
+.header {
+background: linear-gradient(135deg, #06245c, #0b4ca2);
+color: white;
+text-align: center;
+padding: 35px 20px 45px;
+position: relative;
+overflow: hidden;
+border-bottom: 6px solid #f4bd2e;
+}
+.header::after {
+content: "";
+position: absolute;
+bottom: -45px;
+left: -5%;
+width: 110%;
+height: 90px;
+background: #f4f8ff;
+border-radius: 50% 50% 0 0;
+}
+.school-name {
+font-size: 42px;
+font-weight: 800;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+.exam-title {
+margin-top: 15px;
+font-size: 28px;
+color: #ffd34e;
+font-weight: 700;
+}
+.year {
+margin-top: 5px;
+font-size: 18px;
+opacity: 0.9;
+}
+.main {
+max-width: 1200px;
+margin: auto;
+padding: 45px 25px;
+}
+.portal-title {
+text-align: center;
+font-size: 38px;
+font-weight: 800;
+color: #102f68;
+}
+.subtitle {
+text-align: center;
+margin-top: 12px;
+font-size: 18px;
+color: #555;
+}
+.exam-container {
+display: flex;
+justify-content: center;
+gap: 45px;
+margin-top: 45px;
+flex-wrap: wrap;
+}
+.exam-card {
+width: 430px;
+min-height: 430px;
+border-radius: 25px; text-decoration: none;
+overflow: hidden;
+background: white;
+box-shadow: 0 12px 35px rgba(0, 50, 120, 0.15);
+transition: all 0.3s ease;
+border: 2px solid;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.exam-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 20px 45px rgba(0, 50, 120, 0.25);
+}
+.computer-card {
+border-color: #1769e0;
+}
+.computer-content {
+text-align: center;
+padding: 40px 25px;
+color: #1252ad;
+background: linear-gradient(180deg, #ffffff, #edf5ff);
+flex: 1;
+}
+.gk-card {
+border-color: #19a44a;
+}
+.gk-content {
+text-align: center;
+padding: 40px 25px;
+color: #087d32;
+background: linear-gradient(180deg, #ffffff, #edfff2);
+flex: 1;
+}
+.icon {
+width: 125px;
+height: 125px;
+margin: auto;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 65px;
+color: white;
+}
+.computer-icon {
+background: linear-gradient(135deg, #2685f5, #0749ad);
+}
+.gk-icon {
+background: linear-gradient(135deg, #30c75b, #087b30);
+}
+.exam-name {
+margin-top: 25px;
+font-size: 42px;
+font-weight: 800;
+letter-spacing: 1px;
+}
+.description {
+margin-top: 18px;
+color: #333;
+font-size: 17px;
+line-height: 1.6;
+}
+.start-button {
+padding: 20px;
+text-align: center;
+color: white;
+font-size: 22px;
+font-weight: 700;
+}
+.computer-button {
+background: linear-gradient(135deg, #0758c9, #0b75ed);
+}
+.gk-button {
+background: linear-gradient(135deg, #078531, #12ad4b);
+}
+.arrow {
+margin-left: 15px;
+font-size: 28px;
+}
+.instructions {
+margin-top: 60px;
+background: white;
+border-radius: 22px;
+padding: 35px;
+box-shadow: 0 8px 30px rgba(0, 50, 120, 0.10); }
+.instructions h2 {
+text-align: center;
+color: #123a78;
+font-size: 30px;
+margin-bottom: 25px;
+}
+.instruction-list {
+max-width: 900px;
+margin: auto;
+}
+.instruction-item {
+display: flex;
+align-items: center;
+gap: 15px;
+padding: 13px 0;
+font-size: 17px;
+color: #333;
+}
+.check {
+width: 30px;
+height: 30px;
+min-width: 30px;
+border-radius: 50%;
+background: #075bc7;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+}
+.footer {
+background: #06285f;
+color: white;
+text-align: center;
+padding: 25px;
+border-top: 5px solid #f4bd2e;
+}
+.footer p {
+margin: 5px;
+}
+.footer .tagline {
+color: #ffd34e;
+font-style: italic;
+font-size: 17px;
+}
+@media (max-width: 768px) {
+.school-name {
+font-size: 25px;
+}
+.exam-title {
+font-size: 20px;
+}
+.portal-title {
+font-size: 28px;
+}
+.exam-container {
+gap: 25px;
+}
+.exam-card {
+width: 100%;
+max-width: 430px;
+}
+.exam-name {
+font-size: 34px;
+}
+.instructions {
+padding: 25px 18px;
+}
+.instructions h2 {
+font-size: 24px;
+}
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="school-name">
+FACULTY HIGHER SECONDARY SCHOOL
+</div>
+<div class="exam-title">
+HALF-YEARLY EXAMINATION 2026
+</div> <div class="year">
+Online Examination Portal
+</div>
+</header>
+<main class="main">
+<h1 class="portal-title">
+ONLINE EXAMINATION PORTAL
+</h1>
+<p class="subtitle">
+Please select the examination you want to attend.
+</p>
+<div class="exam-container">
+<a href="COMPUTER_GOOGLE_FORM_LINK"
+target="_blank"
+class="exam-card computer-card">
+<div class="computer-content">
+<div class="icon computer-icon">
+■
+</div>
+<div class="exam-name">
+COMPUTER
+</div>
+<div class="description">
+Click the card to start your
+<strong>Computer Examination</strong>
+</div>
+</div>
+<div class="start-button computer-button">
+START EXAM
+<span class="arrow">→</span>
+</div>
+</a>
+<a href="GK_GOOGLE_FORM_LINK"
+target="_blank"
+class="exam-card gk-card">
+<div class="gk-content">
+<div class="icon gk-icon">
+■
+</div>
+<div class="exam-name">
+GK
+</div>
+<div class="description">
+For <strong>Classes 6, 7 &amp; 8</strong><br>
+Click the card to start your
+<strong>GK Examination</strong>
+</div>
+</div>
+<div class="start-button gk-button">
+START GK EXAM
+<span class="arrow">→</span>
+</div>
+</a>
+</div>
+<section class="instructions">
+<h2>
+■ EXAMINATION INSTRUCTIONS
+</h2>
+<div class="instruction-list">
+<div class="instruction-item">
+<span class="check">✓</span>
+Name, Class and Section will be entered in the Google Form.
+</div>
+<div class="instruction-item">
+<span class="check">✓</span>
+Read all questions carefully before answering.
+</div>
+<div class="instruction-item">
+<span class="check">✓</span>
+Attempt all questions.
+</div> <div class="instruction-item">
+<span class="check">✓</span>
+Do not refresh the page during the examination.
+</div>
+<div class="instruction-item">
+<span class="check">✓</span>
+Click Submit after completing the examination.
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<p>
+© 2026 Faculty Higher Secondary School. All Rights Reserved.
+</p>
+<p class="tagline">
+Excellence in Education
+</p>
+</footer>
+</body>
+</html>
